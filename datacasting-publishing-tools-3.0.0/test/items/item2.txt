@@ -1,0 +1,36 @@
+# Title: The title associated with the item.  This text will be
+# displayed in the short view of the item in any feed reader.  It will
+# also be displayed in the "active bookmarks" of any web browser
+# following this feed.  It should contain information identifying the
+# data.
+title = MODIS_A L2P 2006/08/29 23:05:00 UTC
+
+# Description: A longer description of the item which will be visible in 
+description = Surface Temperature Temperature Data
+
+# Author:
+author = Andy Bingham <abingham@jpl.nasa.gov>
+
+# GUID:
+guid = http://podaac.jpl.nasa.gov/~awb/datacasting/MODIS_A/20060829-MODIS_A-JPL-L2P-A2006241230500.L2_LAC_GHRSST-v01.nc
+
+# Enclosure:
+enclosure = http://podaac.jpl.nasa.gov/~awb/datacasting/MODIS_A/20060829-MODIS_A-JPL-L2P-A2006241230500.L2_LAC_GHRSST-v01.nc, 60502835, application/x-netcdf
+
+# CustomElement:
+customElement = PercentageClearPixels,85
+
+# Preview:
+preview = http://podaac.jpl.nasa.gov/~awb/datacasting/MODIS_A/20060829-MODIS_A-JPL-L2P-A2006241231500.L2_LAC_GHRSST-v01.jpg
+
+# Extents:
+extents = 83.543, -34.801, 58.966, 59.725
+
+# AcquisitionStartTime:
+acquisitionStartTime = 2006:8:29:23:05
+
+# AcquisitionEndTime:
+acquisitionEndTime = 2006:8:29:23:10
+
+# PubDate:
+pubDate = 2006:9:12:15:01

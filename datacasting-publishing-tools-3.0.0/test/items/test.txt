@@ -1,0 +1,10 @@
+title=20070202-SST_s0956_e1121
+description=2007-02-02 creation
+author=Doug.May@navy.mil
+guid=http://seaworld:5555/datacasting/data/20070202/20070202-AVHRR18_G-NAVO-L2P-SST_s0956_e1121-v01.nc.bz2
+enclosure=http://seaworld:5555/datacasting/data/20070202/20070202-AVHRR18_G-NAVO-L2P-SST_s0956_e1121-v01.nc.bz2,29884100,application/x-netcdf
+productName=NAVO-L2P-AVHRR18_G
+extents=88.640,-89.836,-180.000,180.000
+acquisitionStartTime=2007:02:02:09:56
+acquisitionEndTime=2007:02:02:11:21
+pubDate=2007:2:6:8:47

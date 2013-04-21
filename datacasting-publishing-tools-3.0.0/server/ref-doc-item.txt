@@ -1,0 +1,98 @@
+# This is the Reference Documented Item file.  Have your scripts
+# automatically generate item files of this format.  Obviously, all you
+# need do is generate the name value pairs in the right format, the
+# comments are totally unparsed.
+
+# © [2007]. California Institute of Technology.  ALL RIGHTS RESERVED.
+# U.S. Government sponsorship acknowledged. Any commercial use must be
+# negotiated with the Office of Technology Transfer at the California
+# Institute of Technology.
+
+# This software is subject to U. S. export control laws and regulations
+# (22 C.F.R. 120-130 and 15 C.F.R. 730-774). To the extent that the
+# software is subject to U.S. export control laws and regulations, the
+# recipient has the responsibility to obtain export licenses or other
+# export authority as may be required before exporting such information
+# to foreign countries or providing access to foreign nationals.
+
+# Title: The title associated with the item.  This text will be
+# displayed in the short view of the item in any feed reader.  It will
+# also be displayed in the "active bookmarks" of any web browser
+# following this feed.  It should contain information identifying the
+# data.
+title = MODIS_A L2P 2006/08/29 23:05:00 UTC
+
+# Link: This is the URL for this data granule.  If you have a web page
+# automatically generated for each granule, put it here.  If your
+# granules are just put on a server somewhere for direct download, this
+# link should point to a description of the data.
+link = http://www.jpl.nasa.gov
+
+# Description: A longer description of the item which will be visible in
+# feed readers.
+description = Surface Temperature Temperature Data
+
+# Enclosure: This is the URI of the granule, it's size in bytes, and the
+# mime-type of the file.
+enclosure = http://podaac.jpl.nasa.gov/~awb/datacasting/MODIS_A/20060829-MODIS_A-JPL-L2P-A2006241230500.L2_LAC_GHRSST-v01.nc, 60502835, application/x-netcdf
+
+# PubDate: The date that the grannule was added (in UTC/GMT) to the
+# Datacasting Feed in the following format:
+#   YYYY:mm:dd:HH:MM:SS
+pubDate = 2006:9:12:15:01
+
+# Author: This name/email refers to the author of this item.  The person
+# who should be contacted if there is an issue with the item's content.
+author = Andy Bingham <abingham@jpl.nasa.gov>
+
+# GUID: This _can_ be a permanent link to the data granule which this
+# item refers to.
+#
+# *** NOTE: it is important that it be a Globally Unique ID for each
+# ***       item that you publish.  Non-unique IDs will overwrite previous
+# ***       items in the Feed Reader.
+#
+guid = http://podaac.jpl.nasa.gov/~awb/datacasting/MODIS_A/20060829-MODIS_A-JPL-L2P-A2006241230500.L2_LAC_GHRSST-v01.nc
+
+# Customelement: Custom elements allow you, the data provider, to add
+# features to the Datacasting feed which are set for each item.  For
+# example, you might want to publish the Percent Cloudiness in an image,
+# or the Fraction of Bad Pixels.  You can also publish summary
+# statistics for the data (Min, Max, Mean, Median, whatever makes
+# sense).  The idea is to include information that will help your user
+# decide if they want the granule.
+#
+# NOTE: Custom elements are defined in the feed config file and must be
+# defined there to use them here...
+#
+customElement = PercentageClearPixels, 85
+
+# Preview: This URL should point to a preview image of no greater than
+# 512 pixels on any side.  If you exceed this size recommendation, your
+# feeds will load very slowly in the Feed Reader.
+preview = http://podaac.jpl.nasa.gov/~awb/datacasting/MODIS_A/20060829-MODIS_A-JPL-L2P-A2006241231500.L2_LAC_GHRSST-v01.jpg
+
+# ProductName: This is a unique filename used to save the item when it
+# is downloaded by the client.  Failure of this to be unique will
+# possibly cause newly downloaded items to overwrite previous ones.
+# When choosing this name be sure to include any extension denoting the
+# file type.
+productName = 20060829-MODIS_A-JPL-L2P-A2006241230500.L2_LAC_GHRSST-v01.nc
+
+# Extents: This is the geographical bounding box of your data.  The
+# values are in the following order: 
+#   lower left corner lat (minimum lat) (south west corner)
+#   lower left corner lon (minimum lon)
+#   upper right corner lat (maximum lat) (north east corner)
+#   upper right corner lon (maximum mon)
+extents = 83.543, -34.801, 58.966, 59.725
+
+# AcquisitionStartDate: The time, in UTC/GMT, that data aquisition
+# started for this granule in the following format:
+#   YYYY:mm:dd:HH:MM:SS
+acquisitionStartDate = 2006:8:29:23:05
+
+# AcquisitionEndDate: The time, in UTC/GMT, that data aquisition ended
+# for this granule in the following format:
+#   YYYY:mm:dd:HH:MM:SS
+acquisitionEndDate = 2006:8:29:23:10

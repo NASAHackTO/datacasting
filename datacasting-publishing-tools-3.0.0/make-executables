@@ -1,0 +1,75 @@
+#!/usr/bin/env python
+
+# © [2007]. California Institute of Technology.  ALL RIGHTS RESERVED.
+# U.S. Government sponsorship acknowledged. Any commercial use must be
+# negotiated with the Office of Technology Transfer at the California
+# Institute of Technology.
+
+# This software is subject to U. S. export control laws and regulations
+# (22 C.F.R. 120-130 and 15 C.F.R. 730-774). To the extent that the
+# software is subject to U.S. export control laws and regulations, the
+# recipient has the responsibility to obtain export licenses or other
+# export authority as may be required before exporting such information
+# to foreign countries or providing access to foreign nationals.
+
+import sys, os, os.path, getopt
+
+def main():
+  try:
+    opts, args = getopt.getopt(sys.argv[1:], "ho:v", ["help", "output="])
+  except getopt.GetoptError:
+    # print help information and exit:
+    usage()
+    sys.exit(2)
+  output = None
+  verbose = False
+  for o, a in opts:
+    if o == "-v":
+      verbose = True
+    if o in ("-h", "--help"):
+      usage()
+      sys.exit()
+    if o in ("-o", "--output"):
+      output = a
+  # Remaining arguments are stored in: args (0 indexed)
+  # ...
+
+  cwd = os.getcwd()
+
+  for utility in ['GenerateFeed', 'IngestItem']:
+    print 'Creating ' + utility
+    d = {}
+    d['DatacastingRoot'] = cwd
+    d['DatacastingUtility'] = utility
+    executable_script = executable_templ % d
+
+    outfile = file(utility, 'w')
+    outfile.write(executable_script)
+    outfile.close()
+
+    os.system("chmod a+x " + utility)
+
+    print 'done.'
+
+executable_templ='''#!/bin/csh
+
+cd %(DatacastingRoot)s
+source setup.csh
+
+python server/%(DatacastingUtility)s.py $*
+'''
+
+def usage():
+  print '''
+  make-executables
+
+    This script creates small, relocatable scripts which you can place
+    anywhere in your path to run the Datacasting Server Tools.  These
+    scripts require no additional paths or environment variable.
+
+    NOTE: To work properly, you must place the Server Tools in a
+    permanent location and then run this script at that location.
+    '''
+    
+if (__name__ == "__main__"):
+  main()

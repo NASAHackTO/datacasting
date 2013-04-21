@@ -1,0 +1,11 @@
+title=MODIS_A L2P 2006/08/29 23:05:00 UTC
+description=Surface Temperature Temperature Data
+author=Andy Bingham <abingham@jpl.nasa.gov>
+guid=http://podaac.jpl.nasa.gov/~awb/datacasting/MODIS_A/20060829-MODIS_A-JPL-L2P-A2006241230500.L2_LAC_GHRSST-v01.nc
+enclosure=http://podaac.jpl.nasa.gov/~awb/datacasting/MODIS_A/20060829-MODIS_A-JPL-L2P-A2006241230500.L2_LAC_GHRSST-v01.nc,60502835,application/x-netcdf
+customElement=PercentageClearPixels,71
+preview=http://podaac.jpl.nasa.gov/~awb/datacasting/MODIS_A/20060829-MODIS_A-JPL-L2P-A2006241231500.L2_LAC_GHRSST-v01.jpg
+extents=83.543,-34.801,58.966,59.725
+acquisitionStartTime=2006:8:29:23:05
+acquisitionEndTime=2006:8:29:23:10
+pubDate=2006:9:12:15:01
